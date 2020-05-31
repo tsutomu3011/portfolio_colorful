@@ -1,0 +1,387 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+.more_message {
+  background-color: black;
+  color: white;
+  padding: 1.7rem 3rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header {
+  height: 140px;
+  line-height: 140px;
+  padding: 0 40px;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .header-logo {
+  vertical-align: middle;
+}
+
+header .container .header-right {
+  position: fixed;
+  right: 5rem;
+  z-index: 20;
+}
+
+header .container .header-right .header-entry {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 17px 38px;
+  border-radius: 50px;
+}
+
+header .container .header-right .fa-bars {
+  font-size: 1.6rem;
+  color: white;
+  background-color: black;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 47%;
+}
+
+/* top-wrapper */
+.top-wrapper .container {
+  height: 120vh;
+}
+
+.top-wrapper .container .adjust-main-background-image {
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-wrapper .container .adjust-main-background-image .top-background-color {
+  height: 63vh;
+  width: 85vw;
+  margin: 50px auto 0;
+  background: -webkit-gradient(linear, left top, right top, from(#02e), color-stop(8.33%, #90f), color-stop(16.66%, #ff3875), color-stop(24.99%, #eb33ff), color-stop(33.32%, #009b87), color-stop(41.65%, #02e), color-stop(49.98%, #90f), color-stop(58.31%, #ff3875), color-stop(66.64%, #eb33ff), color-stop(74.97%, #009b87), color-stop(83.3%, #02e), color-stop(91.63%, #90f), to(#ff3875));
+  background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 0;
+  background-size: 300% 100%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-name: grad-scroll;
+          animation-name: grad-scroll;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.top-wrapper .container .adjust-main-background-image .top-background-color .top-background-image {
+  height: 63vh;
+  width: 85vw;
+  margin: 0 auto;
+  background-image: url("../img/office.jpg");
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.top-wrapper .container .adjust-3images {
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-wrapper .container .adjust-3images .person-image {
+  z-index: 10;
+}
+
+.top-wrapper .container .adjust-3images .person-image .side-images {
+  height: 30vh;
+  margin: 200px 30px 0;
+}
+
+.top-wrapper .container .adjust-3images .person-image .center-image {
+  height: 80vh;
+  position: relative;
+}
+
+.top-wrapper .container .adjust-3images .person-image h1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.top-wrapper .container .top-above {
+  height: 28%;
+}
+
+.top-wrapper .container .top-below {
+  height: 65%;
+  background: -webkit-gradient(linear, left top, right top, from(#02e), color-stop(8.33%, #90f), color-stop(16.66%, #ff3875), color-stop(24.99%, #eb33ff), color-stop(33.32%, #009b87), color-stop(41.65%, #02e), color-stop(49.98%, #90f), color-stop(58.31%, #ff3875), color-stop(66.64%, #eb33ff), color-stop(74.97%, #009b87), color-stop(83.3%, #02e), color-stop(91.63%, #90f), to(#ff3875));
+  background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 0;
+  background-size: 300% 100%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-name: grad-scroll;
+          animation-name: grad-scroll;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.top-wrapper .container .top-below .vision {
+  background-color: #f3f7f9;
+  background-image: url("../img/vision_background.png");
+  background-size: cover;
+  position: absolute;
+  top: 110%;
+  width: 95vw;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-wrapper .container .top-below .vision__title {
+  margin: 15rem 35rem 0;
+}
+
+.top-wrapper .container .top-below .vision__title p {
+  font-size: 1.7rem;
+  font-family: "LTC-Caslon-Pro", serif;
+  color: #757575;
+}
+
+.top-wrapper .container .top-below .vision__title h2 {
+  font-size: 3rem;
+  color: #009b87;
+  font-weight: bold;
+}
+
+.top-wrapper .container .top-below .vision__message {
+  margin-top: 15rem;
+}
+
+.top-wrapper .container .top-below .vision__message p {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+  font-family: "游ゴシック体", YuGothic, sans-serif;
+}
+
+@-webkit-keyframes grad-scroll {
+  0% {
+    background-position: 62.475% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+@keyframes grad-scroll {
+  0% {
+    background-position: 62.475% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+.middle_wrapper .container .service {
+  padding-top: 55vh;
+  padding-left: 30rem;
+  padding-bottom: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: solid 15px #009b87;
+}
+
+.middle_wrapper .container .service__messages {
+  padding-top: 5rem;
+}
+
+.middle_wrapper .container .service__messages p {
+  font-size: 1.7rem;
+  font-family: "LTC-Caslon-Pro", serif;
+  color: #757575;
+}
+
+.middle_wrapper .container .service__messages h2 {
+  font-size: 3rem;
+  color: #009b87;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.middle_wrapper .container .service__messages__message {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.middle_wrapper .container .service__image {
+  margin-left: 5rem;
+  position: relative;
+}
+
+.middle_wrapper .container .service__image img {
+  height: 40vh;
+  position: relative;
+  z-index: 10;
+}
+
+.middle_wrapper .container .service__image__background {
+  z-index: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#02e), color-stop(8.33%, #90f), color-stop(16.66%, #ff3875), color-stop(24.99%, #eb33ff), color-stop(33.32%, #009b87), color-stop(41.65%, #02e), color-stop(49.98%, #90f), color-stop(58.31%, #ff3875), color-stop(66.64%, #eb33ff), color-stop(74.97%, #009b87), color-stop(83.3%, #02e), color-stop(91.63%, #90f), to(#ff3875));
+  background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 0;
+  background-size: 300% 100%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-name: grad-scroll;
+          animation-name: grad-scroll;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: 30vh;
+  width: 30vw;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+.middle_wrapper .container .president_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 17rem 0 0 27rem;
+  background-color: #f3f7f9;
+  height: 60vh;
+}
+
+.middle_wrapper .container .president_message__image {
+  position: relative;
+}
+
+.middle_wrapper .container .president_message__image img {
+  height: 37vh;
+  position: relative;
+  z-index: 10;
+}
+
+.middle_wrapper .container .president_message__image__background {
+  z-index: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#02e), color-stop(8.33%, #90f), color-stop(16.66%, #ff3875), color-stop(24.99%, #eb33ff), color-stop(33.32%, #009b87), color-stop(41.65%, #02e), color-stop(49.98%, #90f), color-stop(58.31%, #ff3875), color-stop(66.64%, #eb33ff), color-stop(74.97%, #009b87), color-stop(83.3%, #02e), color-stop(91.63%, #90f), to(#ff3875));
+  background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 0;
+  background-size: 300% 100%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-name: grad-scroll;
+          animation-name: grad-scroll;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: 30vh;
+  width: 30vw;
+  position: absolute;
+  top: 14%;
+  left: -10%;
+}
+
+.middle_wrapper .container .president_message__adjust {
+  position: relative;
+}
+
+.middle_wrapper .container .president_message__adjust__sentence {
+  background-color: white;
+  padding: 5rem 0 0 5rem;
+  height: 32vh;
+  width: 35vw;
+  position: absolute;
+  top: 10rem;
+  left: -5rem;
+  z-index: 10;
+}
+
+.middle_wrapper .container .president_message__adjust__sentence p {
+  font-size: 1.7rem;
+  font-family: "LTC-Caslon-Pro", serif;
+  color: #757575;
+}
+
+.middle_wrapper .container .president_message__adjust__sentence h2 {
+  font-size: 3rem;
+  color: #009b87;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.middle_wrapper .container .president_message__adjust__sentence h3 {
+  padding-bottom: 8rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+}
+
+footer .footer__above {
+  color: white;
+  padding: 18rem 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #009b87;
+}
+
+footer .footer__above__links h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+footer .footer__above__links a {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+footer .footer__below {
+  padding: 10rem 0 10rem 0;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  color: #556677;
+  background-color: black;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

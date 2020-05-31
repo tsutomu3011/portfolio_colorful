@@ -1,0 +1,319 @@
+html {
+  font-size: 62.5%;
+}
+
+.more_message {
+  background-color: black;
+  color: white;
+  padding: 1.7rem 3rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header {
+  height: 140px;
+  line-height: 140px;
+  padding: 0 40px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .header-logo {
+      vertical-align: middle;
+    }
+    .header-right {
+      position: fixed;
+      right: 5rem;
+      z-index: 20;
+      .header-entry {
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        background-color: black;
+        padding: 17px 38px;
+        border-radius: 50px;
+      }
+      .fa-bars {
+        font-size: 1.6rem;
+        color: white;
+        background-color: black;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 47%;
+      }
+    }
+  }
+}
+
+
+
+
+/* top-wrapper */
+.top-wrapper {
+  .container {
+    height: 120vh;
+    .adjust-main-background-image {
+      height: 0;
+      display: flex;
+      .top-background-color {
+        height: 63vh;
+        width: 85vw;
+        margin: 50px auto 0;
+        background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+        background-repeat: no-repeat;
+        background-position: 0% 0;
+        background-size: 300% 100%;
+        animation-duration: 12s;
+        animation-name: grad-scroll;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        .top-background-image {
+          height: 63vh;
+          width: 85vw;
+          margin: 0 auto;
+          background-image: url('../img/office.jpg');
+          background-size: cover;
+          opacity: 0.4;
+        }
+      }
+    }
+    .adjust-3images {
+      height: 0;
+      display: flex;
+      justify-content: space-between;
+      .person-image {
+        z-index: 10;
+        .side-images {
+          height: 30vh;
+          margin: 200px 30px 0;
+        }
+        .center-image {
+          height: 80vh;
+          position: relative;
+        }
+        h1 {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          // 下記、中央寄せをすることで文字サイズ分のズレを修正している。
+          -ms-transform: translate(-50%,-50%);
+          -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          color: white;
+          font-weight: bold;
+          font-size: 4rem;
+        }
+      }
+    }
+    .top-above {
+      height: 28%;
+    }
+    .top-below {
+      height: 65%;
+      background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+      background-repeat: no-repeat;
+      background-position: 0% 0;
+      background-size: 300% 100%;
+      animation-duration: 12s;
+      animation-name: grad-scroll;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      .vision {
+        background-color: #f3f7f9;
+        background-image: url('../img/vision_background.png');
+        background-size: cover;
+        position: absolute;
+        top: 110%;
+        width: 95vw;
+        height: 65vh;
+        display: flex;
+        &__title {
+          margin: 15rem 35rem 0;
+          p {
+            font-size: 1.7rem;
+            font-family: "LTC-Caslon-Pro", serif;
+            color: #757575;
+          }
+          h2 {
+            font-size: 3rem;
+            color: #009b87;
+            font-weight: bold;
+          }
+        }
+        &__message {
+          margin-top: 15rem;
+          p {
+            font-size: 1.8rem;
+            margin-bottom: 60px;
+            font-family: "游ゴシック体", YuGothic, sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes grad-scroll {
+  0% {
+    background-position: 62.475% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+
+
+
+.middle_wrapper {
+  
+  .container {
+    .service {
+      padding-top: 55vh;
+      padding-left: 30rem;
+      padding-bottom: 17rem;
+      display: flex;
+      border-left: solid 15px #009b87;
+      &__messages {
+        padding-top: 5rem;
+        p {
+          font-size: 1.7rem;
+          font-family: "LTC-Caslon-Pro", serif;
+          color: #757575;
+        }
+        h2 {
+          font-size: 3rem;
+          color: #009b87;
+          font-weight: bold;
+          margin-bottom: 4rem;
+        }
+        &__message {
+          font-size: 1.8rem;
+          margin-bottom: 5rem;
+        }
+      }
+      &__image {
+        margin-left: 5rem;
+        position: relative;
+        img {
+          height: 40vh;
+          position: relative;
+          z-index: 10;
+        }
+        &__background {
+          z-index: 0;
+          background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+          background-repeat: no-repeat;
+          background-position: 0% 0;
+          background-size: 300% 100%;
+          animation-duration: 12s;
+          animation-name: grad-scroll;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          height: 30vh;
+          width: 30vw;
+          position: absolute;
+          top: 35%;
+          left: 20%;
+        }
+      }
+    }
+
+    .president_message {
+      display: flex;
+      padding: 17rem 0 0 27rem;
+      background-color: #f3f7f9;
+      height: 60vh;
+      &__image {
+        position: relative;
+        img {
+          height: 37vh;
+          position: relative;
+          z-index: 10;
+        }
+        &__background {
+          z-index: 0;
+          background: linear-gradient(90deg, #02e 0%, #90f 8.33%, #ff3875 16.66%, #eb33ff 24.99%, #009b87 33.32%, #02e 41.65%, #90f 49.98%, #ff3875 58.31%, #eb33ff 66.64%, #009b87 74.97%, #02e 83.3%, #90f 91.63%, #ff3875 100%);
+          background-repeat: no-repeat;
+          background-position: 0% 0;
+          background-size: 300% 100%;
+          animation-duration: 12s;
+          animation-name: grad-scroll;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          height: 30vh;
+          width: 30vw;
+          position: absolute;
+          top: 14%;
+          left: -10%;
+        }
+      }
+      &__adjust {
+        position: relative;
+        &__sentence {
+          background-color: white;
+          padding: 5rem 0 0 5rem;
+          height: 32vh;
+          width: 35vw;
+          position: absolute;
+          top: 10rem;
+          left: -5rem;
+          z-index: 10;
+          p {
+            font-size: 1.7rem;
+            font-family: "LTC-Caslon-Pro", serif;
+            color: #757575;
+          }
+          h2 {
+            font-size: 3rem;
+            color: #009b87;
+            font-weight: bold;
+            margin-bottom: 2rem;
+          }
+          h3 {
+            padding-bottom: 8rem;
+            font-size: 2.8rem;
+            font-weight: bold;
+            letter-spacing: 0.03rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+footer {
+  .footer__above {
+    color: white;
+    padding: 18rem 30rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #009b87;
+    &__links {
+      h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      a {
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: white;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .footer__below {
+    padding: 10rem 0 10rem 0;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    color: #556677;
+    background-color: black;
+    text-align: center;
+  }
+}
